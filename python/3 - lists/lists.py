@@ -1,13 +1,13 @@
 string_list = ['this', 'is', 'An', 'array', 'Of', 'strings']
 
 
-number_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+number_list = [0, 1, 2, 4444, 4, 5, 6, 2342342, -8, 9]
 
 
-mixed_array = ['mixed', 3, 244, 'array']
+mixed_list = ['mixed', 3, 244, 'array']
 
 
-combined_list = string_list + mixed_array
+combined_list = string_list + mixed_list
 
 
 # list of dictionaries
@@ -29,9 +29,9 @@ combined_list = string_list + mixed_array
 
 # list of lists
 list_list = [
-    [0,1,2],
-    [3,4,5],
-    [6,7,8]
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8]
 ]
 
 
@@ -41,10 +41,7 @@ string_list[1]
 list_list[1][2]
 
 
-string_list[::-1]
-
-
-string_list[0::-1]
+reverse_string_list = string_list[::-1]
 
 
 # Actually alters list
@@ -95,3 +92,6 @@ string_list.remove('nonsense')
 
 
 string_list.count('this')
+
+
+3 in [1, 2, 3]
