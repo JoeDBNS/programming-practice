@@ -1,6 +1,12 @@
 sentence = 'This is a TEST sentence. '
 
 
+sentence[5]
+
+
+sentence[5:10]
+
+
 len(sentence)
 
 
@@ -22,10 +28,16 @@ double_sentence = sentence + sentence
 spaced_double_sentence = sentence, sentence
 
 
-find_test_in_sentence = sentence.index('TEST')
+index_test_in_sentence = sentence.index('TEST')
 
 
-sentence_split = sentence.strip().lower().split(' ') 
+find_test_in_sentence = sentence.find('TEST')
+
+
+find_test_in_sentence = sentence.find('TEST', 5, 10)
+
+
+sentence_split = sentence.strip().lower().split(' ')
 word_count = 0
 
 for word in sentence_split:
