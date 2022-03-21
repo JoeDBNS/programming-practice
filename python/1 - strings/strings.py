@@ -1,6 +1,9 @@
 sentence = 'This is a TEST sentence. '
 
 
+len(sentence)
+
+
 strip_sentence = sentence.strip()
 
 
@@ -31,3 +34,7 @@ for word in sentence_split:
     word_count += 1
 
 upper_each_word_sentence = ' '.join(sentence_split)
+
+
+joe_age = 25
+formatted_sentence = "My first name is {first_name}, I'm {age} years old.".format(first_name = "Joe", age = joe_age)
