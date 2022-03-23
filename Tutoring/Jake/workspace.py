@@ -12,6 +12,9 @@
 string_list = ['this', 'is', 'An', 'array', 'Of', 'is', 'an', 'strings', 'stinky']
 
 
+starting_string = 'this is A string Of stinky'
+practice_string = starting_string.lower()[3:7]
+
 
 # # print(string_list[14])
 
@@ -29,3 +32,31 @@ string_list = ['this', 'is', 'An', 'array', 'Of', 'is', 'an', 'strings', 'stinky
 #         string_list.remove(item)
 
 # print(string_list)
+
+
+
+# person_list = [
+#     {
+#         "first_name": "Joe",
+#         "last_name": "Davis"
+#     },
+#     {
+#         "first_name": "Jake",
+#         "last_name": "Davis"
+#     },
+#     {
+#         "first_name": "Josh",
+#         "last_name": "Friel"
+#     }
+# ]
+
+
+
+# jake_person_list = [
+#     {
+#         "first_name": "Jake",
+#         "last_name": "Davis"
+#     }
+# ]
+
+# print(person_list[1]["first_name"])
