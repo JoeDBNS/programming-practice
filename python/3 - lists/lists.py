@@ -1,6 +1,9 @@
 string_list = ['this', 'is', 'An', 'array', 'Of', 'strings']
 
 
+people_list = ['Joe', 'Jake', 'Frank', 'Franny']
+
+
 number_list = [0, 1, 2, 4444, 4, 5, 6, 2342342, -8, 9]
 
 
@@ -74,7 +77,7 @@ string_list.append('nonsense')
 string_list.append('nonsense')
 
 
-string_list.extend('nonsense')
+string_list.extend(['nonsense', 'nonsense'])
 
 
 string_list.pop()
