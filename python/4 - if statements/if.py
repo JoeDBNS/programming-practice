@@ -1,14 +1,14 @@
 
 test_string = "Hello there."
 
-test_number = ""
-
 true_bool = True
 
-# if (true_bool):
-#     print('TRUE')
+# if (true_bool == False):
+#     print('path 1')
+# elif (true_bool):
+#     print('path 2')
 # else:
-#     print('else')
+#     print('path 3')
 
 
 
@@ -56,12 +56,15 @@ true_bool = True
 
 # test = 'LL'
 
-# match len(test):
-#     case 1:
-#         print('True')
+# match test:
+#     case "eee":
+#         print('wwwwww')
 
-#     case 2:
-#         print('False')
+#     case "ll":
+#         print('qwer')
 
-#     case 3:
-#         print('NULL')
+#     case "OO":
+#         print('rweq')
+
+#     case "LL":
+#         print('LLLLLL')
