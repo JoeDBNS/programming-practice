@@ -1,45 +1,91 @@
 
 # Define globals
 
+items = {
+    0: {
+        "type": "weapon",
+        "name": "Sword",
+        "damage": 20,
+        "speed": 2
+    },
+    1: {
+        "type": "weapon",
+        "name": "Dagger",
+        "damage": 10,
+        "speed": 3
+    },
+    2: {
+        "type": "weapon",
+        "name": "Mallet",
+        "damage": 30,
+        "speed": 1
+    },
+    3: {
+        "type": "weapon",
+        "name": "Sword of Destiny",
+        "damage": 40,
+        "speed": 2
+    },
+    4: {
+        "type": "tool",
+        "name": "Torch"
+    },
+    5: {
+        "type": "tool",
+        "name": "Ration"
+    },
+    6: {
+        "type": "other",
+        "name": "Magic Spoon"
+    },
+    7: {
+        "type": "other",
+        "name": "Cow Dung"
+    }
+}
+
 user = {
     "name": "Flargen Barger",
     "money": 1200,
-    "inventory": {}
+    "inventory": items
 }
+
+for item_key in user["inventory"].keys():
+    user["inventory"][item_key]["amount"] = 0
 
 store_stock = [
     {
-        "name": "Sword",
+        "item_id": 0,
         "cost": 20,
         "amount": 3,
         "hidden": False
     },
     {
-        "name": "Dagger",
+        "item_id": 1,
         "cost": 15,
         "amount": 4,
         "hidden": False
     },
     {
-        "name": "Torch",
+        "item_id": 4,
         "cost": 4,
         "amount": 12,
         "hidden": False
     },
     {
-        "name": "Ration",
+        "item_id": 5,
         "cost": 6,
         "amount": 20,
         "hidden": False
     },
     {
-        "name": "Magic Spoon",
+        "item_id": 6,
         "cost": 500,
         "amount": 1,
         "hidden": True
     },
     {
-        "name": "Sword of Destiny",
+        "item_id": 3,
         "cost": 1500,
         "amount": 1,
         "hidden": False
@@ -51,9 +97,9 @@ store_stock = [
 def PrintStock():
     print("Here is the current stock:")
 
-    for item in store_stock:
-        if item["hidden"] == False:
-            print(item["name"] + "\t$" + str(item["cost"]) + "\tx" + str(item["amount"]))
+    for store_item in store_stock:
+        if store_item["hidden"] == False:
+            print(items[store_item["item_id"]]["name"] + "\t$" + str(store_item["cost"]) + "\tx" + str(store_item["amount"]))
 
 
 
@@ -66,22 +112,19 @@ next_purchase = input("\nWhat would you like to purchase? ")
 while next_purchase != "":
     item_found = False
 
-    for item in store_stock:
-        if item["name"].lower() == next_purchase.lower():
+    for store_item in store_stock:
+        if items[store_item["item_id"]]["name"].lower() == next_purchase.lower():
             item_found = True
 
-            if item["amount"] < 1:
-                print("\nThe " + item["name"] + " is out of stock.")
+            if store_item["amount"] < 1:
+                print("\nThe " + items[store_item["item_id"]]["name"] + " is out of stock.")
             else:
-                if user["money"] < item["cost"]:
-                    print("\nYou cannot afford the " + item["name"] + ". You need " + str(item["cost"] - user["money"]) + " more money to purchase this item.")
+                if user["money"] < store_item["cost"]:
+                    print("\nYou cannot afford the " + items[store_item["item_id"]]["name"] + ". You need " + str(store_item["cost"] - user["money"]) + " more money to purchase this item.")
                 else:
-                    user["money"] -= item["cost"]
-                    if item["name"] in user["inventory"].keys():
-                        user["inventory"][item["name"]] += 1
-                    else:
-                        user["inventory"][item["name"]] = 1
-                    item["amount"] -= 1
+                    user["money"] -= store_item["cost"]
+                    user["inventory"][store_item["item_id"]]["amount"] += 1
+                    store_item["amount"] -= 1
     
     if item_found == False:
         print("\nThat item was not found in the shop.")
@@ -94,7 +137,8 @@ while next_purchase != "":
 
 print("This is your inventory:")
 
-for item_key, item_value in user["inventory"].items():
-    print(item_key + "\tx" + str(item_value))
+for item in user["inventory"].values():
+    if item["amount"] > 0:
+        print(item["name"], "\tx" + str(item["amount"]))
 
 
