@@ -27,7 +27,7 @@ print(dog_2.tricks)
 
 
 
-print('\n\n')
+print('\n')
 
 
 
@@ -37,6 +37,8 @@ class Employee:
     def __init__(self, name_first, name_last):
         self.name_first = name_first
         self.name_last = name_last
+
+    def UpdateFullName(self):
         self.name_full = self.name_first + " " + self.name_last
 
 john = Employee('John', 'Doe')  # Create an empty employee record
@@ -46,13 +48,14 @@ john.dept = 'computer lab'
 john.salary = 1000
 
 print(john)
+john.UpdateFullName()
 print(john.name_full)
 print(john.salary)
 
 
 
 
-print('\n\n')
+print('\n')
 
 
 
