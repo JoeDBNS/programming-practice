@@ -68,3 +68,6 @@ true_bool = True
 
 #     case "LL":
 #         print('LLLLLL')
+
+#     case _:
+#         print("Something else")
