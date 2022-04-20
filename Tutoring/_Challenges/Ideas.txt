@@ -17,26 +17,6 @@ Requirements
 
 
 
-Generate Random Color
------------------------------------------
-Generate a random RGB code.
-
-
-Requirements
--------------
-    - Generate 3 numbers from 0 to 255
-    - Use those numbers to build this "RGB(___, ___, ___)"
-
-
-
-
-
-
-
-
-
-
-
 Is X In List
 -----------------------------------------
 Given a list and a variable, say whether or not that variable was found in
