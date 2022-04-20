@@ -1,3 +1,22 @@
+'Guess the Number' Game
+-----------------------------------------
+Computer picks a random number and you have three guesses to guess the number.
+
+
+Requirements
+-------------
+    - If you guess high the computer needs to tell you. Same for a low guess.
+
+
+
+
+
+
+
+
+
+
+
 Generate Random Color
 -----------------------------------------
 Generate a random RGB code.
@@ -38,10 +57,105 @@ Requirements
 
 
 
+Repeat The Characters
+-----------------------------------------
+Repeat every character of a string. "123a!" should return "112233aa!!"
+
+
+Requirements
+-------------
+    - ________
+
+
+
+
+
+
+
+
+
+
+
+Space Between Characters
+-----------------------------------------
+Add a space between every character of a string. "123a!" should return "1 2 3 a !"
+
+
+Requirements
+-------------
+    - ________
+
+
+
+
+
+
+
+
+
+
+
+Text Encryption and Decryption
+-----------------------------------------
+Build a program that can encrypt and decrypt text using your favorite cipher.
+
+
+Requirements
+-------------
+    - ________
+
+
+
+
+
+
+
+
+
+
+
 Highest Bill Returns
 -----------------------------------------
 Enter total number of dollars desired and the program will return that total
 using the fewest number of individual dollar bills.
+
+
+Requirements
+-------------
+    - ________
+
+
+
+
+
+
+
+
+
+
+
+Mad Libs
+-----------------------------------------
+____________
+
+
+Requirements
+-------------
+    - ________
+
+
+
+
+
+
+
+
+
+
+
+Rock, Paper, Scissors
+-----------------------------------------
+Play Rock, Paper, Scissors against a computer.
 
 
 Requirements
@@ -71,6 +185,44 @@ Requirements
     - Collect desired group size
     - Randomly assign students to groups
     - Return built groups list and any students left out
+
+
+
+
+
+
+
+
+
+
+
+Hangman Game
+-----------------------------------------
+____________
+
+
+Requirements
+-------------
+    - ________
+
+
+
+
+
+
+
+
+
+
+
+Tic-Tac-Toe
+-----------------------------------------
+____________
+
+
+Requirements
+-------------
+    - ________
 
 
 
