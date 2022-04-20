@@ -1,0 +1,120 @@
+Generate Random Color
+-----------------------------------------
+Generate a random RGB code.
+
+
+Requirements
+-------------
+    - Generate 3 numbers from 0 to 255
+    - Use those numbers to build this "RGB(___, ___, ___)"
+
+
+
+
+
+
+
+
+
+
+
+Is X In List
+-----------------------------------------
+Given a list and a variable, say whether or not that variable was found in
+the list
+
+
+Requirements
+-------------
+    - ________
+
+
+
+
+
+
+
+
+
+
+
+Highest Bill Returns
+-----------------------------------------
+Enter total number of dollars desired and the program will return that total
+using the fewest number of individual dollar bills.
+
+
+Requirements
+-------------
+    - ________
+
+
+
+
+
+
+
+
+
+
+
+Dynamic Random Group Maker
+-----------------------------------------
+Build randomly generated groups of students from a defined student list and
+group size.
+
+
+Requirements
+-------------
+    - Collect list of students
+    - Have default list of students for testing purposes
+    - Collect desired group size
+    - Randomly assign students to groups
+    - Return built groups list and any students left out
+
+
+
+
+
+
+
+
+
+
+
+Boss Fight
+-----------------------------------------
+Build your player stats and then fight a randomly generated enemy, original
+pokemon battle style.
+
+
+Requirements
+-------------
+    - Build your fighters stats
+    - Generate a 'random' enemy
+    - Choose whether to attack or defend
+    - Enemy will attack or defend 'randomly'
+
+
+
+
+
+
+
+
+
+
+
+Traveling Salesman
+-----------------------------------------
+You buy and sell goods between towns to make a profit.
+
+
+Requirements
+-------------
+    - Generate shops randomly for each town
+    - Ability to buy items from shops
+    - Ability to sell items to shops
+    - End day by ending trading in that town and traveling to the next town
+    - Remove set amount of money each time you travel to account for food
+      and water needs
