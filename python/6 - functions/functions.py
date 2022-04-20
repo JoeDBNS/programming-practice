@@ -1,27 +1,39 @@
-applicant_list = ["Rico", "Francine", "Rodney", "Franny", "Richard", "Franklin", "Rodrick", "Flourance"]
-hire_list = []
+
+
+applicant_list = []
+hired_list = []
+
+
+def ResetApplications():
+    applicant_list.extend(["Rico", "Francine", "Rodney", "Franny", "Richard", "Franklin", "Rodrick", "Flourance"])
+    hired_list.clear()
+
+
+ResetApplications()
 
 removed_applicant = applicant_list.pop(4)
 removed_applicant = removed_applicant + " - HIRED"
-hire_list.append(removed_applicant)
+hired_list.append(removed_applicant)
 
-removed_applicant = applicant_list.pop(7)
+removed_applicant = applicant_list.pop(3)
 removed_applicant = removed_applicant + " - HIRED"
-hire_list.append(removed_applicant)
+hired_list.append(removed_applicant)
 
 removed_applicant = applicant_list.pop(1)
 removed_applicant = removed_applicant + " - HIRED"
-hire_list.append(removed_applicant)
+hired_list.append(removed_applicant)
 
 
+
+ResetApplications()
 
 def HireApplicant(app_index):
     removed_applicant = applicant_list.pop(app_index)
     removed_applicant = removed_applicant + " - HIRED"
-    hire_list.append(removed_applicant)
+    hired_list.append(removed_applicant)
 
 HireApplicant(4)
-HireApplicant(7)
+HireApplicant(3)
 HireApplicant(1)
 
 
@@ -82,29 +94,9 @@ CreateNewMail("04-18-2022", "Jury Duty", "You've been summoned to report to jury
 
 
 
+def AddSpaceBetweenLetters(word):
+    return " ".join(list(word))
 
-is_mailbox_open = False
-mailbox_mail = []
 
-
-is_mailbox_open = True
-mailbox_mail.pop()
-mailbox_mail.pop()
-mailbox_mail.pop()
-is_mailbox_open = False
-
-is_mailbox_open = True
-mailbox_mail.pop()
-mailbox_mail.pop()
-is_mailbox_open = False
-
-is_mailbox_open = True
-mailbox_mail.pop()
-mailbox_mail.pop()
-mailbox_mail.pop()
-mailbox_mail.pop()
-is_mailbox_open = False
-
-is_mailbox_open = True
-mailbox_mail.pop()
-is_mailbox_open = False
+test_1 = AddSpaceBetweenLetters('word')
+test_2 = AddSpaceBetweenLetters('sample')
