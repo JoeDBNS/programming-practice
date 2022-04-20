@@ -116,7 +116,8 @@ Requirements
 
 Mad Libs
 -----------------------------------------
-____________
+My __adjective-1__ __noun-1__ had caught the attention of my neighbor __name-1__ while he was __verb-ing-1__.
+__name-1__ said that my __noun-1__ was __adjective-2__.
 
 
 Requirements
