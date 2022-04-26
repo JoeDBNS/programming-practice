@@ -27,8 +27,46 @@ def ReturnFewestBillAmounts(working_total):
     return used_bills
 
 
-
 print( ReturnFewestBillAmounts(127) )
 print( ReturnFewestBillAmounts(43) )
 print( ReturnFewestBillAmounts(999) )
 print( ReturnFewestBillAmounts(2) )
+
+
+
+
+
+
+from math import floor
+
+working_total = 127
+
+used_bills = {
+    1: 0,
+    5: 0,
+    10: 0,
+    20: 0,
+    50: 0,
+    100: 0
+}
+
+used_bills[100] = floor(working_total / 100)
+working_total = working_total % 100
+
+used_bills[50] = floor(working_total / 50)
+working_total = working_total % 50
+
+used_bills[20] = floor(working_total / 20)
+working_total = working_total % 20
+
+used_bills[10] = floor(working_total / 10)
+working_total = working_total % 10
+
+used_bills[5] = floor(working_total / 5)
+working_total = working_total % 5
+
+used_bills[1] = floor(working_total / 1)
+working_total = working_total % 1
+
+
+print(used_bills)
