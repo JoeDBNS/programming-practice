@@ -50,3 +50,8 @@ upper_each_word_sentence = ' '.join(sentence_split)
 
 joe_age = 25
 formatted_sentence = "My first name is {first_name}, I'm {age} years old.".format(first_name = "Joe", age = joe_age)
+
+
+
+
+print("Please enter something please they have my family please help".count("e"))
