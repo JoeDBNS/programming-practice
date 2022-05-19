@@ -1,3 +1,6 @@
+import random
+
+
 # txt = "Hello, welcome to my world. welcome"
 
 # search_find = txt.find("wel", 10, 35)
@@ -60,3 +63,30 @@ practice_string = starting_string.lower()[3:7]
 # ]
 
 # print(person_list[1]["first_name"])
+
+
+
+
+
+
+available_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+letter_scramble = ""
+
+for i in range(len(available_letters)):
+    letter_index = random.randint(0, len(available_letters) - 1)
+    chosen_letter = available_letters[letter_index]
+    letter_scramble += chosen_letter
+    available_letters = available_letters.replace(chosen_letter, "")
+
+print(letter_scramble)
+
+
+
+
+saturn = "Joey wears clown shoes!"
+newstring = ""
+
+for char in saturn:
+    newstring += char + char
+
+print(newstring)

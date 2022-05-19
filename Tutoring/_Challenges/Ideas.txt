@@ -49,6 +49,17 @@ Requirements
 
 
 
+# saturn = "Joey wears clown shoes!"
+# newstring = ""
+
+# for char in saturn:
+#     newstring += char + char
+
+# print(newstring)
+
+
+
+
 
 
 
@@ -251,3 +262,28 @@ Requirements
     - End day by ending trading in that town and traveling to the next town
     - Remove set amount of money each time you travel to account for food
       and water needs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+available_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+letter_scramble = ""
+
+for i in range(len(available_letters)):
+    letter_index = random.randint(0, len(available_letters) - 1)
+    chosen_letter = available_letters[letter_index]
+    letter_scramble += chosen_letter
+    available_letters = available_letters.replace(chosen_letter, "")
+
+print(letter_scramble)
