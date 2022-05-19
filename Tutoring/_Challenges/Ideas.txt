@@ -37,6 +37,25 @@ Requirements
 
 
 
+Slot Machine
+-----------------------------------------
+Make a slot machine with 3 wheels and 5 different options per wheel.
+
+
+Requirements
+-------------
+    - ________
+
+
+
+
+
+
+
+
+
+
+
 Repeat The Characters
 -----------------------------------------
 Repeat every character of a string. "123a!" should return "112233aa!!"
