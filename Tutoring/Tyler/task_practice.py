@@ -1,7 +1,7 @@
 import random
 
 
-test_sentence = 'This is a test string.'
+test_sentence = "This is a test string."
 
 double_test_sentence = test_sentence + " " + test_sentence
 
@@ -9,7 +9,7 @@ test_sentence[8]
 
 test_sentence[-1]
 
-double_test_sentence = double_test_sentence.replace('string', 'double string')
+double_test_sentence = double_test_sentence.replace("string", "double string")
 
 
 
@@ -18,9 +18,9 @@ big_number = (7 * (2 + 3))
 
 big_number += 5
 
-final_answer = 'The number __ is the correct number'
+final_answer = "The number __ is the correct number"
 
-final_answer = final_answer.replace('__', str(big_number))
+final_answer = final_answer.replace("__", str(big_number))
 
 
 
@@ -29,7 +29,7 @@ big_number = (7 * (2 + 3))
 
 big_number %= 3
 
-final_answer = 'The number ' + str(big_number) + ' is the correct number'
+final_answer = "The number " + str(big_number) + " is the correct number"
 
 
 
@@ -88,3 +88,76 @@ print("1-100:\t\t", zero_hun_list)
 print("101-200:\t", one_hun_list)
 print("201-300:\t", two_hun_list)
 print("301-400:\t", three_hun_list)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+student_1 = "Stuart"
+
+# Print student_1
+
+# Find what character the name starts with
+
+# If name starts with "S", then print "true", otherwise print "false"
+
+student_2 = "stuart"
+
+# Print student_2
+
+# Find what character the name starts with
+
+# If name starts with "S", then print "true", otherwise print "false"
+
+student_3 = "Tyler"
+
+# Print student_3
+
+# Find what character the name starts with
+
+# If name starts with "S", then print "true", otherwise print "false"
+
+
+
+
+student_list = ["joe", "Beth", "Jake", "josh", "tyler", "Ethan", "james", "Adam", "Bruce", "franny", "Stuart", "Kevin", "brian", "bob", "kathy", "Sarah", "bertha", "Marge", "tom", "Jess", "Mike", "Jay", "rich"]
+
+# Print 10th index of student_list
+
+# Find what character the name starts with
+
+# If name starts with "S", then print "true", otherwise print "false"
+
+
+
+
+# Build loop that prints each name from student_list
+
+# Build same thing but using the other kind of loop (while/for)
+
+
+
+
+# Build loop that iterates through student_list
+
+# Find what character each name starts with
+
+# If name starts with "S", then print "true", otherwise print "false"
+
+
+# Build same thing but using the other kind of loop (while/for)
+
+
+
+
