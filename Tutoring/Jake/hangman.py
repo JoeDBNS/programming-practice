@@ -72,9 +72,6 @@ def BuildSecretWordDisplay():
         elif letter == user_guess:
             secret_word_building += user_guess
 
-            if user_guess not in correct_letters:
-                correct_letters.append(user_guess)
-
         elif letter != user_guess and letter not in correct_letters:
             secret_word_building += "_"
 
@@ -85,10 +82,13 @@ while hangman_complete == False:
     user_guess = input("\nGuess a letter: ")
 
     secret_word_display = BuildSecretWordDisplay()
+
+    if user_guess in secret_word and user_guess not in correct_letters:
+        correct_letters.append(user_guess)
     
     if user_guess not in secret_word:
-            print("That letter is not in the word.")
-            number_of_failures += 1
+        print("That letter is not in the word.")
+        number_of_failures += 1
     
     print(secret_word, "-", secret_word_display, "-", correct_letters)
 
