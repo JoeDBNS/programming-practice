@@ -37,6 +37,58 @@ Requirements
 
 
 
+
+
+import random
+import time
+
+alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',' ']
+
+solution = 'hello world' #end goal
+start = '' #starting string
+holder = ''# letter holder to pop
+i = 0
+
+while start != solution:
+    holder = random.choice(alphabet)
+    if holder != solution[i]:
+        alphabet.remove(holder)
+        print(start + holder)
+        time.sleep(.05)
+    else:
+        alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',' ']
+        start += holder
+        print(start)
+        i += 1
+        time.sleep(.05)
+
+
+
+
+
+
+
+
+
+
+
+
+This keypad randomizes the numbers every time so someone doesn't figure out the password from The hand movements
+https://old.reddit.com/r/interestingasfuck/comments/uwkfr0/this_keypad_randomizes_the_numbers_every_time_so/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Slot Machine
 -----------------------------------------
 Make a slot machine with 3 wheels and 5 different options per wheel.
