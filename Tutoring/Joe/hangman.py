@@ -128,7 +128,7 @@ while user_guess_count < user_guess_max:
     print("Guessed Letters:", str(guessed_letters).replace("\'", "").upper())
 
 if user_guess_count < user_guess_max:
-    print("\n\n\nThe word was: " + BuildSecretWordDisplay())
+    print("\n\n\nThe word was: " + secret_word.upper())
     print("YOU'RE A WINNER!")
 else:
     print("You've lost. Try again later.")
