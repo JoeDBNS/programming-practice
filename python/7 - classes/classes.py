@@ -1,5 +1,3 @@
-from ast import Pass
-
 
 class Dog:
 
