@@ -12,7 +12,7 @@
 from random import randint
 
 
-goal_number = randint(1, 100)
+goal_number = randint(1, 25)
 remaining_guesses = 3
 
 player_won = False
@@ -26,11 +26,12 @@ while remaining_guesses > 0:
     elif player_guess < goal_number:
         print('\nYour guess was too low.')
     else:
-        print('\nCorrect! You Win!')
         player_won = True
-        break
+        remaining_guesses = 0
 
     remaining_guesses -= 1
 
 if player_won == False:
     print('\nYou have lost. Better luck next time.')
+else:
+    print('\nCorrect! You Win!')
