@@ -309,8 +309,17 @@ Requirements
     - Generate a 'random' enemy
     - Choose whether to attack or defend
     - Enemy will attack or defend 'randomly'
+    - Player attacks have a 'telegraph' value that represents whether
+        it'd be better for the enemy to attack or defend. Based on this
+        value and the perception stat of the enemy, they might make the
+        smarter choice against you.
 
-
+attack = {
+    "name": "swan dive",
+    "damage": 20,
+    "smart_response": "defend",
+    "telegraph_value": 80
+}
 
 
 
