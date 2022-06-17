@@ -16,7 +16,7 @@ alpha = [
     # print(letter_scramble)
 
 beta = [
-    "b", "z", "m", "g", "o", "w", "k", "f", "e", "d", "k", "r", "s", "h", "x", " ", "y", "j", "o", "q", "q", "u", "y", "u", "n", "c", "a"
+    "j", "f", "y", "d", "h", "u", "r", "a", "g", "o", "b", "x", "e", "k", "m", " ", "v", "n", "q", "l", "s", "i", "c", "p", "t", "z", "w"
 ]
 message_encrypted = ""
 message_decrypted = ""
@@ -30,7 +30,7 @@ if encrypt_or_decrypt == "e":
     pos = 0
     for letter in message_plaintext:
         letter_index = alpha.index(letter)
-        message_encrypted += beta[letter_index + pos]
+        message_encrypted += beta[(letter_index + pos) % len(beta)]
 
         pos += 1
 
@@ -40,8 +40,11 @@ if encrypt_or_decrypt == "e":
 if encrypt_or_decrypt == "d":
     message_plaintext = input("Enter encrypted message: ")
 
+    pos = 0
     for letter in message_plaintext:
-        letter_index = beta.index(letter)
+        letter_index = (beta.index(letter) - pos) % len(beta)
         message_decrypted += alpha[letter_index]
+
+        pos += 1
 
     print(message_decrypted)
